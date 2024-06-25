@@ -494,6 +494,7 @@ set ML_TIMEOUT_SETUP=40
 label-studio start
 ```
 In label studio, create a new project, upload dataset, and then custom Labeling Interface by modifying and adapting the following code according to the dataset:
+```bash
 <View>
   <Image name="image" value="$image" zoom="true"/>
   <KeyPointLabels name="KeyPointLabels" toName="image">
@@ -513,6 +514,7 @@ In label studio, create a new project, upload dataset, and then custom Labeling 
   	<Label value="person" background="#0d14d3"/>
   </BrushLabels>
 </View>
+```
 Once the dataset is uploaded and labeling interface is set up in Settings, add the model in Model with URL: 
 http://localhost:8003
 and hit Save.
