@@ -470,3 +470,4 @@ export ML_TIMEOUT_SETUP=40
 set ML_TIMEOUT_SETUP=40
 label-studio start
 ```
+In label studio, once the dataset is uploaded and labeling interface is set up in Settings, add the model in Model with URL:http://localhost:8003.
