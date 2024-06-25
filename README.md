@@ -523,4 +523,4 @@ and hit Save.
 
 This project makes use of code from the following repositories:
 
-- [Repository Name](https://github.com/username/repository) - Brief description of how you used the code.
+- [OpenMMLab PlayGround: Semi-Automated Annotation with Label-Studio and SAM]([https://github.com/username/repository](https://github.com/open-mmlab/playground/blob/main/label_anything/readme.md)) - Adapted the code for environment configuration including depnedencies installation and pretrained model downloading.
