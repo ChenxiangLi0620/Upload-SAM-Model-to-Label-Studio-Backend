@@ -518,3 +518,9 @@ In label studio, create a new project, upload dataset, and then custom Labeling 
 Once the dataset is uploaded and labeling interface is set up in Settings, add the model in Model with URL: 
 http://localhost:8003
 and hit Save.
+
+### Acknowledgments
+
+This project makes use of code from the following repositories:
+
+- [Repository Name](https://github.com/username/repository) - Brief description of how you used the code.
