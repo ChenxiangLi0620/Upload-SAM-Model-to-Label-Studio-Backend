@@ -458,6 +458,7 @@ def json_load(file, int_keys=False):
 Start the backend by
 ```bash
 cd ..
+pip install timm
 python app.py --port 8003 --host 0.0.0.0 --with sam_config=vit_h sam_checkpoint_file=./sam_hq_vit_h.pth out_mask=True out_bbox=True device=cuda:0 model_name=sam_hq
 ```
 ### 3.
