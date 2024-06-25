@@ -173,7 +173,7 @@ Then, go to
 cd sam
 nano mmdetection.py
 ```
-and change the model configuration
+and update the model configuration
 ```python
 # Copyright (c) OpenMMLab. All rights reserved.
 import io
@@ -483,8 +483,8 @@ cd ..
 pip install timm
 python app.py --port 8003 --host 0.0.0.0 --with sam_config=vit_h sam_checkpoint_file=./sam_hq_vit_h.pth out_mask=True out_bbox=True device=cuda:0 model_name=sam_hq
 ```
-### 3. Wetup in Label Anything
-Open a new terminal, connect to the server and activate the environment again, and then do
+### 3. Setup in Label Anything
+Open a new terminal, connect to the server, activate the environment again, and then run
 ```bash
 cd playground/label_anything
 # Linux requires the following commands
