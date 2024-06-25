@@ -519,6 +519,8 @@ Once the dataset is uploaded and labeling interface is set up in Settings, add t
 http://localhost:8003
 and hit Save.
 
+When one starts labeling, toggle Auto Annotation on.
+
 ### Acknowledgments
 
 This project makes use of code from the following repositories:
