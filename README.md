@@ -10,7 +10,7 @@ git clone https://github.com/open-mmlab/playground
 # Linux and Windows CUDA 11.3
 pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 
-cd path/to/playground/label_anything
+cd playground/label_anything
 # Before proceeding to the next step in Windows, you need to complete the following command line.
 # conda install pycocotools -c conda-forge
 pip install opencv-python pycocotools matplotlib onnxruntime onnx
