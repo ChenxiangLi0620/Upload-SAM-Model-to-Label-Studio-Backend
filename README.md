@@ -493,6 +493,26 @@ export ML_TIMEOUT_SETUP=40
 set ML_TIMEOUT_SETUP=40
 label-studio start
 ```
-In label studio, once the dataset is uploaded and labeling interface is set up in Settings, add the model in Model with URL: 
+In label studio, create a new project, upload dataset, and then custom Labeling Interface by modifying and adapting the following code according to the dataset:
+<View>
+  <Image name="image" value="$image" zoom="true"/>
+  <KeyPointLabels name="KeyPointLabels" toName="image">
+    <Label value="cat" smart="true" background="#e51515" showInline="true"/>
+    <Label value="person" smart="true" background="#412cdd" showInline="true"/>
+  </KeyPointLabels>
+  <RectangleLabels name="RectangleLabels" toName="image">
+  	<Label value="cat" background="#FF0000"/>
+  	<Label value="person" background="#0d14d3"/>
+  </RectangleLabels>
+  <PolygonLabels name="PolygonLabels" toName="image">
+  	<Label value="cat" background="#FF0000"/>
+  	<Label value="person" background="#0d14d3"/>
+  </PolygonLabels>
+  <BrushLabels name="BrushLabels" toName="image">
+  	<Label value="cat" background="#FF0000"/>
+  	<Label value="person" background="#0d14d3"/>
+  </BrushLabels>
+</View>
+Once the dataset is uploaded and labeling interface is set up in Settings, add the model in Model with URL: 
 http://localhost:8003
 and hit Save.
