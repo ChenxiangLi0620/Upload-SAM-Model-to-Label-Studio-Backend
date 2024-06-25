@@ -528,4 +528,4 @@ When one starts labeling, toggle Auto-Annotation and Auto Accept Annotation Sugg
 
 This project makes use of code from the following repositories:
 
-- [OpenMMLab PlayGround: Semi-Automated Annotation with Label-Studio and SAM]([https://github.com/username/repository](https://github.com/open-mmlab/playground/blob/main/label_anything/readme.md)) - Adapted part of the code about environment configuration including depnedencies installation and pretrained model downloading.
+- [OpenMMLab PlayGround: Semi-Automated Annotation with Label-Studio and SAM]([https://github.com/username/repository](https://github.com/open-mmlab/playground/blob/main/label_anything/readme.md]) - Adapted part of the code about environment configuration including depnedencies installation and pretrained model downloading.
