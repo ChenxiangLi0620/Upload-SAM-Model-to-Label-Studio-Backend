@@ -25,7 +25,7 @@ wget https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_h.pth
 pip install label-studio==1.7.3
 pip install label-studio-ml==1.0.9
 ```
-### 2. 
+### 2. ML Backend Setup and Model Loading
 ```bash
 cd playground/label_anything
 nano app.py
