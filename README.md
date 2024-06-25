@@ -455,3 +455,18 @@ def json_load(file, int_keys=False):
         else:
             return data
 ```
+Start the backend by
+```bash
+cd ..
+python app.py --port 8003 --host 0.0.0.0 --with sam_config=vit_h sam_checkpoint_file=./sam_hq_vit_h.pth out_mask=True out_bbox=True device=cuda:0 model_name=sam_hq
+```
+### 3.
+Open a new terminal, connect to the server and activate the environment again, and then do
+```bash
+cd playground/label_anything
+# Linux requires the following commands
+export ML_TIMEOUT_SETUP=40
+# Windows requires the following commands
+set ML_TIMEOUT_SETUP=40
+label-studio start
+```
