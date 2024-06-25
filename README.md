@@ -494,7 +494,7 @@ set ML_TIMEOUT_SETUP=40
 label-studio start
 ```
 In label studio, create a new project, upload dataset, and then custom Labeling Interface by modifying and adapting the following code according to the dataset:
-```bash
+```XML
 <View>
   <Image name="image" value="$image" zoom="true"/>
   <KeyPointLabels name="KeyPointLabels" toName="image">
