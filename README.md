@@ -544,6 +544,11 @@ In label studio, create a new project, upload dataset, and then custom Labeling 
 Once the dataset is uploaded and labeling interface is set up in Settings, add the model in Machine Learning with URL: 
 http://localhost:8003 and hit Save.
 
+If encounter NOT NULL error, go back to terminal and run:
+```bash
+pip install --upgrade label-studio
+```
+
 ![image](https://github.com/ChenxiangLi0620/Upload-SAM-Model-to-Label-Studio-Backend/assets/168608052/8062ac44-dda1-49d0-b219-c9a9f4ad475c)
 
 When one starts labeling, toggle Auto-Annotation and Auto Accept Annotation Suggestions on, select one of the tools (keypoints/bounding box/brush) and their relative label to annotate the image.
