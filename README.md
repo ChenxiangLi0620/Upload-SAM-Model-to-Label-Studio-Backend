@@ -483,6 +483,37 @@ cd ..
 pip install timm
 python app.py --port 8003 --host 0.0.0.0 --with sam_config=vit_h sam_checkpoint_file=./sam_hq_vit_h.pth out_mask=True out_bbox=True device=cuda:0 model_name=sam_hq
 ```
+
+In case of package conflicts in numpy and matplotlib, do:
+
+Uninstall Conflicting Packages:
+
+Uninstall existing versions of numpy and matplotlib that are causing conflicts.
+```bash
+Copy code
+pip uninstall numpy matplotlib -y
+Reinstall Compatible Versions:
+```
+
+Install numpy and matplotlib versions that are compatible with your setup.
+```bash
+Copy code
+pip install numpy==1.21.6 matplotlib==3.4.3
+```
+
+Install specific versions of torch, torchvision, and torchaudio from the PyTorch stable repository that are compatible with CUDA 11.3.
+```bash
+Copy code
+pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+```
+
+Check Dependencies amd ensure that there are no conflicting dependencies remaining.
+```bash
+Copy code
+pip check
+```
+This combination ensures that all dependencies are aligned and compatible with each other, solving the import and version conflicts previously encountered.
+
 ### 3. Setup in Label Anything
 Open a new terminal, connect to the server, activate the environment again, and then run
 ```bash
