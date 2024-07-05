@@ -513,11 +513,10 @@ This combination ensures that all dependencies are aligned and compatible with e
 Open a new terminal, connect to the server, activate the environment again, and then run
 ```bash
 cd playground/label_anything
-# Linux requires the following commands
-export ML_TIMEOUT_SETUP=40
-# Windows requires the following commands
-set ML_TIMEOUT_SETUP=40
-label-studio start
+python3 -m venv env
+source env/bin/activate 
+pip install label-studio
+label-studio
 ```
 In label studio, create a new project, upload dataset, and then custom Labeling Interface by modifying and adapting the following code according to the dataset:
 ```XML
